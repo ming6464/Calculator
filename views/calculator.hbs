@@ -1,0 +1,13 @@
+<form action="/upload">
+  <input type="text" id="so1" {{#if show}} value={{so1}} {{/if}} name="num1" placeholder="Nhập số thứ nhất" />
+  <select name="operation">
+    <option {{#if check0}}selected{{/if}}>+</option>
+    <option {{#if check1}}selected{{/if}}>-</option>
+    <option {{#if check2}}selected{{/if}}>*</option>
+    <option {{#if check3}}selected{{/if}}>/</option>
+  </select>
+  <input type="text" id="so2" {{#if show}} value={{so2}} {{/if}} name="num2" placeholder="Nhập số thứ hai" />
+  <button type="submit">Tính</button>
+</form>
+<h1>Kết Quả : {{ketqua}}</h1>
+
